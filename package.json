@@ -1,0 +1,35 @@
+{
+    "name": "custom-cordova-plugin",
+    "version": "0.0.1",
+    "description": "Plugin to test custom Cordova plugin",
+    "scripts": {
+      "init-repo": "test -d .git && test -d .githooks && git config core.hooksPath .githooks",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "cordova": {
+      "id": "custom-cordova-plugin",
+      "platforms": [
+        "android",
+        "ios"
+      ]
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/OS-justinloveless/custom-cordova-plugin.git"
+    },
+    "keywords": [
+      "cordova",
+      "custom",
+      "plugin"
+    ],
+    "standard-version": {
+      "commitAll": true,
+      "message": "chore(release): raise version to %s",
+      "tag-prefix": "",
+      "skip": {
+          "changelog": true
+      }
+    },
+    "author": "Justin Loveless",
+    "homepage": "https://github.com/OS-justinloveless/custom-cordova-plugin#readme"
+  }

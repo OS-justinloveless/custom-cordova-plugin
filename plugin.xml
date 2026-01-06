@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="custom-cordova-plugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+  <name>Custom Cordova Plugin</name>
+  <repo>https://github.com/OS-justinloveless/custom-cordova-plugin.git</repo>
+  <issue>https://github.com/OS-justinloveless/custom-cordova-plugin/issues</issue>
+  <description>Test plugin for custom Cordova plugin</description>
+  <author>Justin Loveless</author>
+  <license>MIT</license>
+  <keywords>cordova, custom, plugin</keywords>
+
+  <hook type="after_plugin_install" src="scripts/custom-cordova-plugin.js" />
+
+</plugin>
