@@ -8,8 +8,6 @@
   <license>MIT</license>
   <keywords>cordova, custom, plugin</keywords>
 
-  <hook type="after_plugin_install" src="scripts/custom-cordova-plugin.js" />
-
     <platform name="android">
         <config-file target="app/src/main/res/values/colors.xml" parent="/*">
             <color name="test_color">#000000</color>
