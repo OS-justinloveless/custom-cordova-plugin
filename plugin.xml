@@ -8,9 +8,14 @@
   <license>MIT</license>
   <keywords>cordova, custom, plugin</keywords>
 
+  <hook type="after_plugin_install" src="scripts/custom-cordova-plugin.js" />
+
     <platform name="android">
-        <edit-config target="app/src/main/res/values/colors.xml" parent="/*">
-            <color name="cdv_colors">#000000</color>
+        <edit-config target="app/src/main/res/values/strings.xml" parent="/*">
+            <string name="cdv_strings">Hello World</string>
         </edit-config>
+        <config-file target="app/src/main/res/values/colors.xml" parent="/*">
+            <color name="test_color">#000000</color>
+        </config-file>
     </platform>
 </plugin>
